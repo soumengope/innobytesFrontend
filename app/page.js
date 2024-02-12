@@ -7,7 +7,7 @@ import { useEffect } from "react";
 export default function Home() {
   useEffect(()=>{
     const redirectPage = setTimeout(()=>{
-      window.location.href="http://localhost:3000/myUser";
+      window.location.href="https://innobytes-frontend.vercel.app/myUser";
     },1000)
   },[])
   return (
