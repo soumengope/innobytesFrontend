@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import React,{useRef} from 'react';
 
-export default function personalInfo(){
+export default function PersonalInfo(){
 
     const [name,setName] = useState(false)
     const changeVal = ()=>{
