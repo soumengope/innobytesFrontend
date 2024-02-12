@@ -1,0 +1,187 @@
+.container
+{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    background:white;
+    font-family: Inter;
+    font-style: normal;
+}
+.signIn_desc
+{
+    color: #8692A6;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align:right;
+    padding-right:81px;
+    padding-top:70px;
+}
+.signIn_desc a
+{
+    color: #1565D8; 
+    font-weight:500;
+}
+.joinUs
+{
+    padding-left:127px;
+    padding-top:135px;
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+}
+.joinUs_desc
+{
+    width: 411px; 
+    color: #8692A6;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-left:127px;
+    padding-top:10px;
+}
+.main_individual
+{
+    width: 426px;
+    height: 108px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 1px solid #1565D8;
+    background: #F5F9FF;
+    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.04);  
+    margin-left:127px;
+    margin-top:35px;
+    padding:25px;
+    color:black;
+    display:flex;
+}
+.individual_leftDiv
+{
+    padding-right:18px;
+}
+.leftIndvidual_logoChild
+{
+    position:relative;
+    bottom:37px;
+    left:16px;
+}
+.individual_centerDiv
+{
+    padding-left:18px;
+}
+.individual_header
+{
+    color: #000;
+    font-size: 16px;
+    font-weight: 500; 
+}
+.individual_desc
+{
+    color: #8692A6;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal; 
+}
+.individual_rightDiv
+{
+    padding-top:18px;
+    padding-left:18px;
+}
+.main_business
+{
+    width: 426px;
+    height: 108px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.04);  
+    margin-left:127px;
+    margin-top:28px;
+    padding:25px;
+    color:black;
+    display:flex;
+}
+.business_leftDiv
+{
+    padding-right:18px;
+}
+.leftBusiness_logoChild
+{
+    position:relative;
+    bottom:37px;
+    left:16px;
+}
+.business_centerDiv
+{
+    padding-left:18px;
+}
+.business_header
+{
+    color: #000;
+    font-size: 16px;
+    font-weight: 500; 
+}
+.business_desc
+{
+    color: #8692A6;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+@media screen and (min-width:0px) and (max-width:760px){
+    .container{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+    }
+    .mob{
+        width:100%;
+    }
+    .mob img{
+        width:100%;
+        height:70dvh;
+    }
+    .signIn_desc
+    {
+        color: #8692A6;
+        text-align:left;
+        padding-right:0px;
+        padding-left:20px;
+    }
+    .joinUs
+    {
+        padding-left:20px;
+        padding-top:75px;
+        color: #000;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .joinUs_desc
+{
+    width: 300px; 
+    color: #8692A6;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-left:20px;
+    padding-top:10px;
+}
+.main_individual
+{
+    width: 340px;
+    height: 100px;
+    margin-left:10px;
+    padding:15px;
+}
+.main_business
+{
+    width: 340px;
+    height: 100px;
+    margin-left:10px;
+    padding:15px;
+}
+
+}

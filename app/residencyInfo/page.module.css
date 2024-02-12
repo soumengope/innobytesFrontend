@@ -1,0 +1,224 @@
+.container
+{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    background:white;
+    font-family: Inter;
+    font-style: normal;
+}
+.rInfo_right
+{
+    padding-top:75px;
+    display:flex;
+    justify-content: space-between;
+    font-family: Inter;
+    font-style: normal;
+    line-height: normal;
+}
+.residencyInfo_topLeft
+{
+    padding-left:38px;
+    display:flex;
+    gap:9px;
+}
+.rInfo_topLeft_text
+{
+    color: #8692A6;
+    font-size: 16px;
+    font-weight: 600;
+}
+.residencyInfo_topRight
+{
+    padding-right:90px;
+}
+.rInfo_topRight_text
+{
+    color: #BDBDBD;
+    font-size: 14px;
+    font-weight: 500;
+}
+.rInfo_topRight_text1
+{
+    color: #8692A6;
+    font-size: 16px;
+    font-weight: 600;
+}
+.rInfo_header
+{
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top:69px;
+    padding-left:127px;
+}
+.rInfo_description
+{
+    color: #8692A6;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    padding-top:10px;
+    padding-left:127px;
+}
+.sepLine
+{   width:427px;
+    border-bottom:1px solid #F5F5F5;
+    padding-top:16px;
+    margin-left:127px;
+}
+.mainForm
+{
+    padding-top:24px;
+}
+.mainForm input
+{
+    background:white;
+    width: 426px;
+    height: 64px;
+    flex-shrink: 0;
+    color: black;
+    font-size:14px;
+    font-weight:500;
+    padding-left:30px;
+    border:1px solid rgb(126, 121, 121);
+}
+.countryInp select
+{
+    width: 426px;
+    height: 64px;
+    flex-shrink: 0;
+    font-size:14px;
+    font-weight:500;
+    padding-left:30px;
+    color:black;
+    background:white;
+    
+}
+.mainForm input:focus, .countryInp select:focus
+{
+    outline:1px solid #1565D8;
+    border:none;
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
+}
+.phone,.address,.country
+{
+    color:#696F79;
+    font-size:16px;
+    font-weight:500;
+    padding-left:127px;
+}
+.address,.country
+{
+    padding-top:24px;
+}
+.phoneInp,.addressInp,.countryInp
+{
+    padding-top:14px;
+    padding-left:127px;
+}
+.countryInp span
+{
+    position:relative;
+    right:70px;
+    cursor:pointer;
+    color: #000;
+    font-size:12px;
+    font-weight:400;
+}
+
+.mainSubmit
+{
+    padding-top:39px;
+    padding-left:127px;
+}
+.mainSubmit input
+{
+    border-radius: 6px;
+    background: #1565D8;
+    color: #FFF;
+    font-size:16px;
+    font-weight:500;
+    border:none;
+}
+.bottomSecureContent
+{
+    padding-top:29px;
+    display:flex;
+    justify-content:center;
+    gap:8px;
+}
+.secureContentLogo
+{
+    color: #8692A6;
+    font-size: 12px;
+    font-weight: 400;
+}
+.error
+{
+    color:red;
+}
+
+@media screen and (min-width:0px) and (max-width:760px){
+    .container{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+    }
+    .mob{
+        width:100%;
+    }
+    .mob img{
+        width:100%;
+        height:70dvh;
+    }
+    .rInfo_right
+    {
+        display:flex;
+        justify-content:space-between;
+    }
+    .rInfo_header
+    {
+        width:70%;
+        padding-top:69px;
+        padding-left:20px;
+    }
+    .rInfo_description
+    {
+        padding-left:20px;
+        width:80%;
+    }
+    
+    .sepLine
+    {   
+        width:300px;
+        border-bottom:1px solid #F5F5F5;
+        padding-top:16px;
+        margin-left:20px;
+    }
+    .mainForm
+    {
+        text-align:left;
+        position:relative;
+        right:100px;
+    }
+    .mainForm input
+    {
+        width: 300px;
+        padding-left:20px;
+        height: 64px;
+    }
+    .countryInp select
+    {
+        width: 300px;
+        padding-left:20px;
+        height: 64px; 
+    }
+    .bottomSecureContent
+    {
+        padding-top:29px;
+        display:flex;
+        justify-content:left;
+        padding-left:20px;
+        gap:20px;
+    }
+}
