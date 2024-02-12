@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 Install all Dependencies first :
 1) Create a Folder (eg-innobytesFrontend) -> Install node (https://nodejs.org) -> npm is automatically installed with nodejs.
-2) Create Next ap using : ```bash npx create-next-app@latest ```
+2) Create Next ap using : ```npx create-next-app@latest ```
 3) Download all codes from my github repository then insert inside your nextjs project.
 
 Then, run the development server:
