@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react'; 
 
-export default function residencyInfo(){
+export default function ResidencyInfo(){
     const country = ["","India","Germany","USA","UK","France","China"];
     const [errors, setErrors] = useState({});
     const [formData,setFormData]=useState({
