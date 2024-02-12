@@ -104,7 +104,7 @@ export default function ResidencyInfo(){
                             value={formData.country}>
                                 {
                                     country.map(elem=>{
-                                        return <option>{elem}</option>
+                                        return <option key={elem}>{elem}</option>
                                     })
                                 }
                             </select>
