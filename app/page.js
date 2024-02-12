@@ -19,8 +19,8 @@ export default function Home() {
           <div className={styles.header}>Registration</div>
           <div className={styles.description}>Onboarding Design</div>
         </div>
-        <div className={styles.top_imgdiv1}><Image src="/1.png" width={450.379} height={308.478}alt="" ></Image></div>
-        <div className={styles.top_imgdiv2}><Image src="/3.png" width={87} height={308.478}alt=""></Image></div>
+        <div className={styles.top_imgdiv1}><Image src="/1.png" width={450.379} height={308.478} alt="" ></Image></div>
+        <div className={styles.top_imgdiv2}><Image src="/3.png" width={87} height={308.478} alt=""></Image></div>
       </div>
 
       <div className={styles.bot_mainSection}>
