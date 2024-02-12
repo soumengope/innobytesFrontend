@@ -53,13 +53,13 @@ export default function residencyInfo(){
 
         <div className={styles.container}>
             <div className={styles.rInfo_left}>
-                <div className={styles.mob}><Image src="/Frame1.png" width={666} height={1024}></Image></div>
+                <div className={styles.mob}><Image src="/Frame1.png" width={666} height={1024} alt=""></Image></div>
             </div>
             <div className={styles.main_rInfo_right}>
                 <div className={styles.rInfo_right}>
                     <Link href="/personalInfo">
                     <div className={styles.residencyInfo_topLeft}>
-                        <div className={styles.rInfo_topLeft_img}><Image src="/arrow_back.svg" width={20} height={20}></Image></div>
+                        <div className={styles.rInfo_topLeft_img}><Image src="/arrow_back.svg" width={20} height={20} alt=""></Image></div>
                         <div className={styles.rInfo_topLeft_text}>Back</div>
                     </div>
                     </Link>
@@ -120,7 +120,7 @@ export default function residencyInfo(){
                 </div>
                 <div className={styles.bottomSecureContent}>
                     <div className={styles.secureContentLogo}>
-                        <Image src="/lock.svg" width={14} height={14}></Image>
+                        <Image src="/lock.svg" width={14} height={14} alt=""></Image>
                     </div>
                     <div className={styles.secureContentLogo}>Your Info is safely secured</div>
                 </div>
