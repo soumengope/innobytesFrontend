@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
-export default function bankInfo(){
+export default function BankInfo(){
     const [errors,setErrors] = useState({})
     const [formData,setFormData]=useState({
         bank:'',
