@@ -35,13 +35,13 @@ export default function bankInfo(){
 
         <div className={styles.container}>
             <div className={styles.bInfo_left}>
-                <div className={styles.mob}><Image src="/Frame1.png" width={666} height={1024}></Image></div>
+                <div className={styles.mob}><Image src="/Frame1.png" width={666} height={1024} alt=""></Image></div>
             </div>
             <div className={styles.main_bInfo_right}>
                 <div className={styles.bInfo_right}>
                     <Link href="/residencyInfo">
                     <div className={styles.bankInfo_topLeft}>
-                        <div className={styles.bInfo_topLeft_img}><Image src="/arrow_back.svg" width={20} height={20}></Image></div>
+                        <div className={styles.bInfo_topLeft_img}><Image src="/arrow_back.svg" width={20} height={20} alt=""></Image></div>
                         <div className={styles.bInfo_topLeft_text}>Back</div>
                     </div>
                     </Link>
@@ -65,7 +65,7 @@ export default function bankInfo(){
                             onChange={handleChange} 
                             value={formData.bank}></input>
                             {errors.bank=="ok" && <div className={styles.okLogo}>
-                                <Image src="/Group.png" width={18.333} height={18.333}></Image>
+                                <Image src="/Group.png" width={18.333} height={18.333} alt=""></Image>
                             </div>}
                             {errors.bank !=="ok" && <p className={styles.error}>{errors.bank}</p>}
                         </div>
@@ -79,7 +79,7 @@ export default function bankInfo(){
                 </div>
                 <div className={styles.bottomSecureContent}>
                     <div className={styles.secureContentLogo}>
-                        <Image src="/lock.svg" width={14} height={14}></Image>
+                        <Image src="/lock.svg" width={14} height={14} alt=""></Image>
                     </div>
                     <div className={styles.secureContentLogo}>Your Info is safely secured</div>
                 </div>
