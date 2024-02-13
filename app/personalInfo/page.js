@@ -65,7 +65,7 @@ export default function PersonalInfo(){
         
     }
     if(errors.name=="ok" && errors.email=="ok" && errors.pass=="ok" && errors.chkbox=="ok"){
-        window.location.href="http://localhost:3000/residencyInfo";
+        window.location.href="https://innobytes-frontend.vercel.app/residencyInfo";
     }
     return(
 
