@@ -31,3 +31,10 @@ all codes , so anything you want to edit you can edite from here.
 
 ## Additional Information
 This Next.js application was developed despite being a beginner with Next.js. I encountered numerous challenges during development but addressed them one by one. The application is designed entirely using CSS instead of Bootstrap, as I am more proficient in CSS and find it offers greater flexibility for designing from scratch, resulting in a more user-friendly interface. Additionally, I implemented mobile-responsive features using CSS, although the optimization is tailored specifically for devices with a width of 350px.
+
+This website boasts a stunning layout and revolves around a user signup form. It features a plethora of inputs, all designed with an appealing aesthetic that closely resembles the provided Figma design. The standout feature of this application is its robust form validation, implemented using Next.js's features such as useState, useRef, etc., to streamline the process and enhance user experience.
+Mainly in this application has 3 important section where I deal with users inputs:
+1) Personal Information (name,email),
+2) Recidency Information (phone,address),
+3) Bank Information (account details)
+
