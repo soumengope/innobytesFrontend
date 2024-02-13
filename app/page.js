@@ -8,7 +8,7 @@ export default function Home() {
   useEffect(()=>{
     const redirectPage = setTimeout(()=>{
       window.location.href="https://innobytes-frontend-woad.vercel.app/myUser";
-    },1000)
+    },2000)
   },[])
   return (
     <div className={styles.mainDiv}>
