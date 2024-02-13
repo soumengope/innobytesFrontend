@@ -47,7 +47,7 @@ export default function ResidencyInfo(){
         }
     }
     if(errors.phone=="ok" && errors.address=="ok" && errors.country=="ok"){
-        window.location.href="https://innobytes-frontend.vercel.app/bankInfo";
+        window.location.href="https://innobytes-frontend-woad.vercel.app//bankInfo";
     }
     return(
 
