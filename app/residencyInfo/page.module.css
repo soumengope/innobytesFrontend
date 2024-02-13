@@ -154,6 +154,33 @@
     font-size: 12px;
     font-weight: 400;
 }
+.phoneCountryMain
+{
+    display:flex;
+    gap:5px;
+    color:black;
+}
+.Cname,.Ccode
+{
+    position:relative;
+    top:16px;
+}
+.Cname select
+{
+    outline:none;
+    color:black;
+    background:none;
+    border:none;
+}
+.phoneCountryMain
+{
+    position:absolute;
+    top:358px;
+}
+.phoneInp input
+{
+    padding-left:170px;
+}
 .error
 {
     color:red;
@@ -220,5 +247,14 @@
         justify-content:left;
         padding-left:20px;
         gap:20px;
+    }
+        .phoneCountryMain
+    {
+        position:absolute;
+        top:65px;
+    }
+    .phoneInp input
+    {
+        padding-left:170px;
     }
 }
