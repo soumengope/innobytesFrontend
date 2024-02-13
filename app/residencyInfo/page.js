@@ -5,12 +5,40 @@ import Link from 'next/link';
 import { useState } from 'react'; 
 
 export default function ResidencyInfo(){
+    const phoneCountries = [
+        {
+            "image":"/INDIA.png",
+            "cName":"INDIA",
+            "code" :"+91"
+        },
+        {
+            "image":"/USA.png",
+            "cName":"USA",
+            "code":"+1"
+        },
+        {
+            "image":"/UK.png",
+            "cName":"UK",
+            "code":"+44"
+        },
+        {
+            "image":"/FRANCE.png",
+            "cName":"FRANCE",
+            "code":"+33"
+        },
+        {
+            "image":"/CHINA.png",
+            "cName":"CHINA",
+            "code":"+86"
+        }
+    ];
     const country = ["","India","Germany","USA","UK","France","China"];
     const [errors, setErrors] = useState({});
     const [formData,setFormData]=useState({
         phone:'',
         address:'',
-        country:''
+        country:'',
+        phoneC:'',
       });
     const handleChange = (e)=>{
         const {name,value} = e.target;
@@ -19,15 +47,19 @@ export default function ResidencyInfo(){
           [name]:value,
         })
     }
+    
+    let countryImage = phoneCountries.filter(obj => obj.cName === formData.phoneC).map(obj => obj.image)[0];
+    let countryCode = phoneCountries.filter(obj => obj.cName === formData.phoneC).map(obj => obj.code)[0];
+    
     const formSubmit = (e)=>{
         e.preventDefault();
         let newErrors = {};
         if(formData.phone.length<=0){
             newErrors.phone = "empty phone number";
-        }else if(formData.phone.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im)){
+        }else if(formData.phone.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,6}$/im)){
             newErrors.phone="ok";
         }else{
-            newErrors.phone="Invalid, phone number must be 10 digit";
+            newErrors.phone="Invalid, phone number must be greater than 9 digit";
         }
         if(formData.address.length<=0){
             newErrors.address="empty address field";
@@ -82,6 +114,32 @@ export default function ResidencyInfo(){
                             <input type="text" name="phone" placeholder="Enter phone"
                             onChange={handleChange} 
                             value={formData.phone}></input>
+                            <div className={styles.phoneCountryMain}>
+                                <div className={styles.Cname}>
+                                <select type="text" name="phoneC"
+                                onChange={handleChange}
+                                value={formData.phoneC}>{
+                                    phoneCountries.map((elem)=>{
+                                        return <option key={elem}>{elem.cName}</option>
+                                    })
+                                }
+                                </select>
+                                </div>  
+                                <div className={styles.Cimage}>
+                                    {
+                                    (countryImage === undefined ? 
+                                        <Image src="/INDIA.png" width={50} height={50} alt=""></Image> :
+                                        <Image src={countryImage} width={50} height={50} alt=""></Image>)
+                                    }
+                                </div>
+                                <div className={styles.Ccode}>
+                                    {
+                                        countryCode === undefined ?
+                                        <p>+ 91</p> :<p>{countryCode}</p>
+                                    }
+                                </div>
+
+                            </div>
                             {errors.phone !=="ok" && <p className={styles.error}>{errors.phone}</p>}
                         </div>
                     </div>
