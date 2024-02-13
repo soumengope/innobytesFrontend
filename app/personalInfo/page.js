@@ -65,7 +65,7 @@ export default function PersonalInfo(){
         
     }
     if(errors.name=="ok" && errors.email=="ok" && errors.pass=="ok" && errors.chkbox=="ok"){
-        window.location.href="https://innobytes-frontend.vercel.app/residencyInfo";
+        window.location.href="https://innobytes-frontend-woad.vercel.app/residencyInfo";
     }
     return(
 
