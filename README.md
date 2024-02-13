@@ -29,8 +29,5 @@ all codes , so anything you want to edit you can edite from here.
 
 
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Additional Information
+This Next.js application was developed despite being a beginner with Next.js. I encountered numerous challenges during development but addressed them one by one. The application is designed entirely using CSS instead of Bootstrap, as I am more proficient in CSS and find it offers greater flexibility for designing from scratch, resulting in a more user-friendly interface. Additionally, I implemented mobile-responsive features using CSS, although the optimization is tailored specifically for devices with a width of 350px.
